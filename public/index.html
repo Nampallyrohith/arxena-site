@@ -1,0 +1,73 @@
+<html lang="en" sandbox="allow-scripts allow-same-origin allow-downloads">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+
+<!--
+  <script>
+      var loaded = false;
+  </script>
+-->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <script  src="public/js/jquery-3.2.1.min.js"></script>
+
+  <!-- My Overview Div -->
+  <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="public/css/arxena.css" />
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+
+  <script src="public/js/html2canvas.js"></script>
+  
+
+  
+  
+
+  <link rel="stylesheet" href="public/intl-tel-input-17.0.18/build/css/intlTelInput.css">
+
+
+<title>{{messages.company_name}}'s Org Charts ({{messages.type}}) - Arxena</title>
+<meta name="description" content="This is the Arxena's rendering of the orgchart of {{messages.company_name}}">
+
+
+</head>
+
+
+<body onload = callBodyOnloadFunction()>
+  <div id="root">
+    <div id = "load_type" data-row = "{{messages.load_type}}"></div>
+    <div id = "payment_plans" data-row = "{{messages.payment_plans_json_dump}}"></div>
+    <div id = "org_data" data-row="{{messages.org_data}}" ></div>
+    <div id ="company_id" data-row = "{{messages.company_id}}" ></div>
+    <div id ="functions_tree" data-row = "{{messages.functions_tree}}" ></div>
+    <div id="blank_params" data-row = "{{messages.blank_params}}" ></div>
+    <div id="blank_query"  data-row = "{{messages.blank_query}}"></div>
+    <div id ="user_obj" data-row = "{{messages.user_obj}}" ></div>
+    <div id ="stripe_publishable_key" data-row = "{{messages.stripe_publishable_key}}"></div>
+    <div id="all_content" style="height:100%"></div>
+  </div>
+
+
+  <script src="public/intl-tel-input-17.0.18/build/js/intlTelInput.js"></script>
+  <script src="public/js/paymentplans.js"></script>
+  <script src="public/js/talkwidget.js"></script>
+  <script src="public/js/fetchqueryshowresults.js"></script>
+  <script src="public/js/paramsStorageobj.js"></script>
+  <script src="public/js/loadorgchart.js"></script>
+  <script src="public/js/exceltable.js"></script>
+  <script src="public/js/orgchart.js"></script>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.23.6/babel.min.js"></script>
+  <script type="text/babel" src="App.js"></script>
+</body>
+</html>
+
+
